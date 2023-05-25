@@ -1,0 +1,56 @@
+*{
+    text-decoration: underline;
+}
+h3{
+    color: green;
+}
+h4{
+    color: rgb(211, 16, 146);
+}
+
+h5,p{
+    color:red;
+}
+/* p{
+    color:red;
+} */
+
+/* DRY */
+/* span{
+    color:green;
+} */
+span{
+    color:darkmagenta;
+}
+p span, p strong{
+    color:yellow;
+}
+#id-value{
+    color:yellow;
+    background-color: rgb(59, 133, 238);   
+}
+div{
+    color:white;
+    background-color: red;
+}
+.text-bclock{
+    background-color: orange;
+}
+.text-bclock h3{
+    color:black;
+}
+.text-bclock p{
+    color:gray;
+}
+
+.parent p:first-child{
+    /* background-color: rgb(30, 17, 173); */
+    background-color: rgba(30, 17, 173, 0.305);
+
+}
+.parent p:last-child{
+    background-color: goldenrod;
+}
+.parent p:nth-child(4){
+    background-color: darkcyan;
+}
