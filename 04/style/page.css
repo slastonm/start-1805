@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F2F2F2;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    /* height: 70px; */
+    padding: 50px 0;
+    background-color: rgb(30, 221, 20);
+}
+div{
+    /* width: 100px; */
+    /* padding: 100px;
+    text-align: center;
+    background-color: red;
+    margin:0 auto; */
+}
+.text-content{
+    margin: 0 auto;
+    width: 810px;
+}
+.text-content.center{
+    text-align: center;
+}
+.content-container{
+    width: 938px;
+    margin: 0 auto;
+    font-size: 0px;
+}
+.logo, .header-social{
+    display: inline-block;
+    background-color: yellow;
+    font-size: 18px;
+    width: 469px;
+}
+.logo a, .header-social a{
+    display: inline-block;
+}
+.header-social{
+    text-align: right;
+}
+/* Form section styles */
+.form-section{
+    padding: 50px 0;
+    background-color: darkorange;
+}
+.form-section h1{
+    padding: 150px;
+    text-align: center;
+    line-height: 14px;
+    line-height: 100%;
+}
+.form-section form{
+    text-align: center;
+}
+.form-section form input,
+.form-section form button {
+    display: inline-block;
+    border: none;
+    /* border: 3px solid red; */
+}
+.form-section form input{
+    width: 560px;
+    font-size: 50px;
+    padding: 10px 20px;
+    background-color: white;
+    color:yellow;
+    /* border-radius:10px 0 0 10px; */
+    background-color: #FFFFFF;
+    border-radius: 2px 0px 0px 2px;
+}
+.form-section form input::placeholder{
+    color:blue;
+}
+.form-section form input:focus{
+    outline: none;
+    background-color: red;
+    border: 4px solid black;
+}
+.form-section form button{
+    background-color: #333;
+    padding: 10px 20px;
+    color:white;
+}
+.form-section form button:hover{
+    background-color: red;
+    color:green;
+}
+a{
+    text-decoration: none;
+}
+/* .special-link{
+    color: red;
+}
+.special-link:visited{
+    color: darkgreen;
+} */
+.link-block{
+    padding: 50px 0;
+}
+.text-content a{
+    display: inline-block;
+    background-color: yellowgreen;
+    padding: 10px;
+    margin-right: 15px;
+}
+.text-content a:last-child{
+    margin-right: 0;
+}
+h1{
+    font-size: 43px;
+    line-height: 54px;
+    text-align: center;
+    color: #8A6D2F;
+    /* font-family: 'Roboto2', sans-serif; */
+}
+
+.section-titles{
+    font-size: 37px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.size{
+    /* box-sizing: content-box; */
+    width: 100px;
+    text-align: center;
+    background-color: yellow;
+    margin: 50px auto;
+}
