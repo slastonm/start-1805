@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    /* width: 600px; */
+    width: 86%;
+    background-color: orange;
+    margin: 0 auto;
+}
+header div{
+    display: inline-block;
+    width: 300px;
+    background-color: red;
+    font-size: 14px;
+}
+
+
+.clear::before,
+.clear::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.folat-text{
+    width: 86%;
+    margin: 0 auto;
+}
+.folat-text img{
+    float: right;
+    width: 20%;
+    min-width: 300px;
+    
+    /* margin-left: 100px; */
+    margin-bottom: 50px;
+}
+.float-parent{
+    background-color: greenyellow;
+    width: 86%;
+    margin: 50px auto;
+}
+.right{
+    float: right;
+    width: 33.33%;
+    max-width: 300px;
+    min-width: 150px;
+    background-color: burlywood;
+}
+.left{
+    float: left;
+    background-color: lightcoral;
+    width: 20%;
+    max-width: 200px;
+    min-width: 100px;
+    margin-right: 10px;
+}
+
+.test{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: black;
+}
