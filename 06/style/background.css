@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.bg-image{
+    width: 1500px;
+    height: 1500px;
+    /* padding-left: 520px; */
+    margin: 10px auto;
+    background-image:url("../img/avatar.png");
+    background-color: yellow;
+    /* background-image:url("../img/avatar.png"),url("../img/1.webp"); */
+    /* background-image:url("../img/1.webp"),url("../img/bg.jpeg"); */
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-y; */
+    /* background-position: top 140px left 300px; */
+    /* background-position: bottom 140px right 300px; */
+    /* background-position: center bottom; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    background-size: 50%;
+    background-attachment: fixed;
+}
+/* .bg-image:hover{
+    background-color: orange;
+} */
+.game{
+    width: 78px;
+    height: 70px;
+    background-repeat: no-repeat;
+    /* background-image: url("https://w7.pngwing.com/pngs/1010/601/png-transparent-sprite-video-game-sprite-game-game-vehicle-pc-game.png"); */
+    background-image: url("../img/sprite-icon-29.jpg");
+    /* background-position: top -23px left -177px; */
+    background-position: top -11px left -177px;
+}
+.game:hover{
+    background-position: top -98px left -177px;
+}
+.game.disabled{
+    background-position: top -173px left -177px;
+}
