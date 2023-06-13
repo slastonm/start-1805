@@ -1,0 +1,67 @@
+$body-bg:red;
+$body-color:white;
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: $body-bg;
+    color:$body-color;
+}
+header{
+    padding: 50px;
+    background-color: yellow;
+    a{
+        color: violet;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+            color:white;
+        }
+    }
+}
+.btn{
+    padding: 50px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    &::before{
+        content: "!";
+        position: relative;
+    }
+    &:hover{
+        background-color: violet;
+        &::before{
+            top:-10px;
+            left: -20px;
+        }
+    }
+}
+.watch-all{
+    @extend .btn;
+    color:white;
+    background-color: green;
+}
+.new{
+    @extend .btn;
+    color:rgb(180, 5, 5);
+    background-color: rgb(2, 23, 2);
+}
+// header{
+//     padding: 50px;
+//     background-color: yellow;
+// }
+// header a{
+//     color: violet;
+//     text-decoration: none;
+// }
+// header a:hover{
+//     text-decoration: underline;
+//     color:orange;
+// }
+// $base-color:#000;
+@for $i from 1 through 7 {
+    ul:nth-child(3n + #{$i}) {
+      background-color: lighten(#000, $i * 5%);
+    }
+}

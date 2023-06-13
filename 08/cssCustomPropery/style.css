@@ -1,0 +1,48 @@
+:root{
+    --header-background-color: black;
+    /* --HeaderBackgroundColor: red; */
+    --header-clor:white;
+    --section-padding-x:100px;
+    --section-padding-y:200px;
+    --section-background:yellow;
+    --section-color:black;
+    --base-font-size:10px;
+}
+*{
+    box-sizing: border-box;
+}
+html, body{
+    font-size: var(--base-font-size);
+}
+header{
+    background-color: var(--header-background-color);
+    color: var(--header-clor);
+}
+section{
+    background-color: var(--section-background);
+    color: var(--section-color);
+    padding: var(--section-padding-x) var(--section-padding-y);
+}
+section.special{
+    --section-background:rgb(2, 95, 42);
+    --section-color:rgb(212, 12, 12);
+    background-color: var(--section-background);
+    color: var(--section-color);
+}
+
+@media screen and (max-width:1000px){
+    :root{
+        --header-background-color: rgb(179, 4, 4);
+        /* --HeaderBackgroundColor: red; */
+        --header-clor:rgb(23, 2, 2);
+        --section-padding-x:50px;
+        --section-padding-y:100px;
+        --section-background:rgb(203, 8, 190);
+        --section-color:rgb(247, 247, 247);
+        --base-font-size:20px;
+    }
+    section.special{
+        --section-background:rgb(166, 219, 6);
+        --section-color:rgb(24, 2, 2);
+    }
+}
