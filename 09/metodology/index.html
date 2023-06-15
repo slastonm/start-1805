@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header>
+        <h1 class="main-title"></h1>
+        <a href="#" class="link-item">Link</a>
+   </header> 
+   <h3>
+        Object-Oriented CSS
+    </h3>
+    <style>
+        .link-item {
+            color: red;
+            text-decoration: none;
+        }
+        .main-title{
+            font-size: 4rem;
+            margin: 10px 0;
+        }
+    </style>
+    <h3>
+        Atomic CSS ( ACSS)
+    </h3>
+    <a href="#" class="color-red text-decor-n">
+        Link
+    </a>
+    <h2 class="text-center fs-20 mx-4 my-3">
+        Hello
+    </h2>
+
+    <h3>
+        Block Element Modifier (BEM)
+    </h3>
+    <ul class="my-list">
+        <li class="my-list-li">
+            <a href=""></a>
+        </li>
+    </ul>
+    <ul class="list__block__el">
+        <li class="list__block_el__item">
+            <a href="#" class="list__block_el__item__link">Link</a>
+        </li>
+    </ul>
+    <ul class="list__block__el--horizontal">
+        <li class="list__block_el__item">
+            <a href="#" class="list__block_el__item__link">Link</a>
+        </li>
+    </ul>
+    <style>
+        /*
+            BEM  не підтримує такі приклади
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+        }
+        body header div ul li a{
+            text-decoration: none;
+        } */
+
+    </style>
+    <h3>
+        Scalable and Modular Architecture for CSS (SMACSS)
+    </h3>
+    <button class="btn bright-button">
+        1
+    </button>
+    <button class="btn dark-button">
+        2
+    </button>
+    <style>
+        .btn{
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 6px;
+        }
+        .bright-button{
+            background-color: yellow;
+            color:blue;
+        }
+        .dark-button{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</body>
+</html>
