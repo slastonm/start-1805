@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+@keyframes first{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+@keyframes pro{
+    0%{
+        background-color: black;
+        left: 0;
+        top: 0;
+        border-radius: 0px;
+    }
+    25%{
+        background-color: rgb(234, 9, 9);
+        left: 100px;
+        top: 0;
+        border-radius: 20px;
+    }
+    50%{
+        background-color: rgb(137, 234, 9);
+        left: 100px;
+        top: 100px;
+        border-radius: 50px;
+        
+    }
+    75%{
+        background-color: rgb(16, 9, 234);
+        left: 0;
+        top: 100px;       
+        border-radius: 20px;
+
+    }
+    100%{
+        background-color: black;
+        left: 0;
+        top: 0;
+        border-radius: 0px;
+
+    }
+}
+.my-first-animation{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* margin: 50px auto; */
+    position: absolute;
+    /* animation-name: first; */
+    animation-name: pro;
+    animation-duration: 2s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+
+}
+.my-first-animation.revers{
+    animation-direction: reverse;
+    animation-delay: 10s;
+}
+@keyframes move {
+    from {left: 0px;}
+    to {left: 1800px;}
+}
+.animatio-type{
+    margin-top:200px;
+}
+.animatio-type>div {
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+    color: #fff;
+    background-color: rgb(54, 74, 11);
+    font-weight: bold;
+    position: relative;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.linear {animation-timing-function: linear}
+.ease {animation-timing-function: ease;}
+.ease-in {animation-timing-function: ease-in;}
+.ease-out {animation-timing-function: ease-out;}
+.ease-in-out {animation-timing-function: ease-in-out;}
+.custom{animation-timing-function: cubic-bezier(.21,.87,1,-0.08);}
+
+.transition{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: lightcoral;
+    /* transition: width 2s, height 3s, background-color 3s; */
+    transition: all 2s ease-out;
+}
+.transition>img{
+    width: 100%;
+    transition: all 2s ease-out;
+}
+.transition:hover{
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+}
+.transition:hover img{
+    rotate: 45deg;
+    /* rotate: -180deg; */
+    scale:0.8 0.8;
+    transform: translate(-50px, -100px)  skew(45deg, 0deg);
+
+}
+button{
+    margin: 50px;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 20px 40px;
+    transition: all 2s ease-out;
+}
+button:hover{
+    /* transform: skew(45deg, 0deg); */
+    background-color: yellow;
+}
+
+button:hover .svg-path{
+    fill: black;
+    stroke-width: 2px;
+    stroke:red;
+}
